@@ -1,0 +1,34 @@
+@mixin flexbox() {
+  display: flex;
+  display: -webkit-box;
+}
+
+@mixin flexboxCenter() {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+
+}
+
+@mixin justify-content($value) {
+  justify-content: $value;
+}
+
+@mixin display-inline{
+  display: inline;
+  justify-content: space-between;
+  margin: 0 20px;
+
+}
+
+@mixin hover{
+  transition: 0.4s;
+  background-color: $secondaryColor;
+  cursor: pointer;
+}
+
+@mixin btn($value){
+  font-size: $value;
+  background-color: $primaryColor;
+
+}

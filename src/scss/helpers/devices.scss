@@ -1,0 +1,34 @@
+$phone:0px; //xs
+$tablet:768px; //sm
+$laptop:1024px; //md
+$desktop:1440px; //lg
+$extralarge:1920px; //xl
+
+@mixin xs {
+    @media only screen and (min-width: $phone) and (max-width:#{$tablet - 1}){
+        @content;
+    }
+}
+
+@mixin sm{
+    @media only screen and (min-width: $tablet) and (max-width:#{$laptop - 1}){
+        @content;
+    }
+}
+
+@mixin md{
+    @media only screen and (min-width: $laptop) and (max-width:#{$desktop - 1}){
+        @content;
+    }
+}
+
+@mixin lg{
+    @media only screen and (min-width: $desktop) and (max-width:#{$extralarge - 1}){
+        @content;
+    }
+}
+@mixin exl{
+    @media only screen and (min-width: $extralarge) {
+        @content;
+    }
+}
