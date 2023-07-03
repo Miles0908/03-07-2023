@@ -1,0 +1,51 @@
+.Hero__Text {
+  @include Text;
+}
+.Hero img {
+  @include borderBox(12px);
+  @include padding(4px);
+  width: 50vh;
+}
+.Hero__btn {
+  @include borderBox(8px);
+  @include btn(1em);
+}
+
+.Hero__btn:hover{
+  @include hover
+}
+
+@include xs {
+  .Hero img {
+    width: 50vh;
+  }
+}
+
+@include sm {
+  .Hero img {
+    width: 108vh;
+  }
+  .Hero__Text {
+    @include Text;
+    @include font-size(2rem);
+  }
+}
+
+@include md {
+  .Hero img {
+    width: 140vh;
+  }
+  .Hero__Text {
+    @include Text;
+    @include font-size(2.4rem);
+  }
+}
+@include lg {
+  .Hero img {
+    width: 200vh;
+  }
+  .Hero__Text {
+    @include Text;
+    @include font-size(2.7rem);
+  }
+}
