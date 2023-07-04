@@ -1,0 +1,25 @@
+@use "sass:math";
+
+@function colorShade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+//metodo per la creazione di colonne
+$columnCount: 12;
+
+@function column($col) {
+  @return math.div(100%, $columnCount) * $col;
+}
+//fine primo metodo
+
+//altro metodo per la creazione di colonne
+$colonne: 12;
+@mixin colonna($span) {
+  width:calc( 100% / $colonne )* $span;
+  background-color: $thirdColor;
+}
+
+@for $i from 1 through $colonne {
+  .colonna-#{$i} {
+    @include colonna($i);
+  }
+} //Fine altro metodo

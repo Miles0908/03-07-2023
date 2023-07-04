@@ -19,6 +19,9 @@
   .Hero img {
     width: 50vh;
   }
+  .Hero__Text{
+    display: none;
+  }
 }
 
 @include sm {

@@ -1,0 +1,201 @@
+.col-1 {
+  width: column(1);
+  background-color: $secondaryColor;
+}
+.col-2 {
+  width: column(2);
+  background-color: $secondaryColor;
+}
+.col-3 {
+  width: column(3);
+  background-color: $secondaryColor;
+}
+.col-4 {
+  width: column(4);
+  background-color: $secondaryColor;
+}
+.col-5 {
+  width: column(5);
+  background-color: $secondaryColor;
+}
+.col-6 {
+  width: column(6);
+  background-color: $secondaryColor;
+}
+.col-7 {
+  width: column(7);
+  background-color: $secondaryColor;
+}
+.col-8 {
+  width: column(8);
+  background-color: $secondaryColor;
+}
+.col-9 {
+  width: column(9);
+  background-color: $secondaryColor;
+}
+.col-10 {
+  width: column(10);
+  background-color: $secondaryColor;
+}
+.col-11 {
+  width: column(11);
+  background-color: $secondaryColor;
+}
+.col-12 {
+  width: column(12);
+  background-color: $secondaryColor;
+}
+@include xs {
+    .col-xs-1 {
+      width: column(1);
+    }
+    .col-xs-2 {
+      width: column(2);
+      background-color: $fourthColor;
+    }
+    .col-xs-3 {
+      width: column(3);
+      background-color: $fourthColor;
+    }
+    .col-xs-4 {
+      width: column(4);
+      background-color: $fourthColor;
+    }
+    .col-xs-5 {
+      width: column(5);
+      background-color: $fourthColor;
+    }
+    .col-xs-6 {
+      width: column(6);
+      background-color: $fourthColor;
+    }
+    .col-xs-7 {
+      width: column(7);
+      background-color: $fourthColor;
+    }
+    .col-xs-8 {
+      width: column(8);
+      background-color: $fourthColor;
+    }
+    .col-xs-9 {
+      width: column(9);
+      background-color: $fourthColor;
+    }
+    .col-xs-10 {
+      width: column(10);
+      background-color: $fourthColor;
+    }
+    .col-xs-11 {
+      width: column(11);
+      background-color: $fourthColor;
+    }
+    .col-xs-12 {
+      width: column(12);
+      background-color: $fourthColor;
+    }
+  }
+  
+  // column sm
+  @include sm {
+    .col-sm-1 {
+      width: column(1);
+    }
+    .col-sm-2 {
+      width: column(2);
+      background-color: $fourthColor;
+    }
+    .col-sm-3 {
+      width: column(3);
+      background-color: $fourthColor;
+    }
+    .col-sm-4 {
+      width: column(4);
+      background-color: $fourthColor;
+    }
+    .col-sm-5 {
+      width: column(5);
+      background-color: $fourthColor;
+    }
+    .col-sm-6 {
+      width: column(6);
+      background-color: $fourthColor;
+    }
+    .col-sm-7 {
+      width: column(7);
+      background-color: $fourthColor;
+    }
+    .col-sm-8 {
+      width: column(8);
+      background-color: $fourthColor;
+    }
+    .col-sm-9 {
+      width: column(9);
+      background-color: $fourthColor;
+    }
+    .col-sm-10 {
+      width: column(10);
+      background-color: $fourthColor;
+    }
+    .col-sm-11 {
+      width: column(11);
+      background-color: $fourthColor;
+    }
+    .col-sm-12 {
+      width: column(12);
+      background-color: $fourthColor;
+    }
+  }
+  
+  // column md
+  @include md {
+    .col-md-1 {
+      width: column(1);
+    }
+    .col-md-2 {
+      width: column(2);
+      background-color: $fourthColor;
+    }
+    .col-md-3 {
+      width: column(3);
+      background-color: $fourthColor;
+    }
+    .col-md-4 {
+      width: column(4);
+      background-color: $fourthColor;
+    }
+    .col-md-5 {
+      width: column(5);
+      background-color: $fourthColor;
+    }
+    .col-md-6 {
+      width: column(6);
+      background-color: $fourthColor;
+    }
+    .col-md-7 {
+      width: column(7);
+      background-color: $fourthColor;
+    }
+    .col-md-8 {
+      width: column(8);
+      background-color: $fourthColor;
+    }
+    .col-md-9 {
+      width: column(9);
+      background-color: $fourthColor;
+    }
+    .col-md-10 {
+      width: column(10);
+      background-color: $fourthColor;
+    }
+    .col-md-11 {
+      width: column(11);
+      background-color: $fourthColor;
+    }
+    .col-md-12 {
+      width: column(12);
+      background-color: $fourthColor;
+    }
+  }
+
+
