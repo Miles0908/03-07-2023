@@ -14,8 +14,9 @@ export default defineConfig({
         @import "./src/scss/helpers/borderBox.scss";
         @import "./src/scss/helpers/padding.scss";
         @import "./src/scss/helpers/heroText.scss";
-       
-       
+        @import "./src/scss/helpers/functions.scss";
+        @import "./src/scss/helpers/columns.scss";
+
         `
       }
     }

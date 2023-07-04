@@ -1,0 +1,11 @@
+.Container {
+  width: 100%;
+  max-width: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 4px;
+}
