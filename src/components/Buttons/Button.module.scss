@@ -1,0 +1,81 @@
+.Button {
+   margin: 0 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid;
+  gap: 40px;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+
+  &.iconLeft {
+    flex-direction: row-reverse;
+  }
+
+  &.fill {
+    @include buttonFill(fill);
+    &:hover {
+      @include buttonFill(outline);
+    }
+  }
+
+  &.outline {
+    @include buttonFill(outline);
+    &:hover {
+      @include buttonFill(fill);
+    }
+  }
+
+  &.xl {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  &.md {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  &.sm {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  &.square {
+    border-radius: 50%;
+    width: rem(48px);
+    height: rem(48px);
+  }
+}
+
+/* .Button__Xl {
+  width: 120px;
+  height: 45px;
+  margin: 12px;
+  padding: 5px;
+  font-size: large;
+
+  @include borderBox(12px);
+}
+
+.Button__Md {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: wheat;
+  @include borderBox(50%);
+}
+
+.Button__Sm {
+  @include flexboxCenter;
+  background-color: yellow;
+  width: 20px;
+  height: 20px;
+  @include borderBox(50%);
+}
+ */
