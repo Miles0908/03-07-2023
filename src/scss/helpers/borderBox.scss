@@ -1,5 +1,5 @@
  @mixin borderBox($value){
-    border-radius: 8px;
+    border-radius: $value;
     box-shadow: 0 0 4px ;
  }
 

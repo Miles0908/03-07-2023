@@ -16,6 +16,7 @@ export default defineConfig({
         @import "./src/scss/helpers/heroText.scss";
         @import "./src/scss/helpers/functions.scss";
         @import "./src/scss/helpers/columns.scss";
+        @import "./src/scss/helpers/layout.scss";
 
         `
       }
