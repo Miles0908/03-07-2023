@@ -11,9 +11,8 @@ import Badges from "./components/Badges/Badges";
 import Select from "./components/Select/Select";
 import DropdownSelect from "./components/DropdownSelect/DropdownSelect";
 
-
 import { useState } from "react";
-
+import InputCheckbox from "./components/InputCheckbox/InputCheckbox";
 
 function App() {
   const [isButtonXl, setIsButtonXl] = useState(false);
@@ -25,8 +24,6 @@ function App() {
   const [inputPasswordValue, setInputPasswordValue] = useState();
   const [inputSelectValue, setInputSelectValue] = useState();
   const [inputDropdownValue, setInpuDropdownValue] = useState();
-
-
 
   const options = {
     name: "products",
@@ -51,10 +48,10 @@ function App() {
   };
   return (
     <>
-     {/*  <Navbar /> */}
-      {/*   <Hero /> */}
-      <Grid />
-      <div onClick={() => toggleButtonXl()}>
+     <Navbar /> 
+         <Hero /> 
+    {/*   <Grid /> */}
+  {/*     <div onClick={() => toggleButtonXl()}>
         <Button label="go to" icon iconLeft size="sm" square />
       </div>
       <div>
@@ -69,8 +66,8 @@ function App() {
 
       <Badges />
 
-      <MailBadge />
-
+      <MailBadge /> */}
+{/* 
       <Input
         id={"name"}
         type={"text"}
@@ -78,12 +75,9 @@ function App() {
         placeholder={"inserisci il tuo nome"}
         label={"Your name"}
         error
-     
-        
         handleChange={setInputTextValue}
-
       />
-       <Input
+      <Input
         id={"password"}
         type={"password"}
         icon={"icon"}
@@ -91,25 +85,26 @@ function App() {
         placeholder={"inserisci la password"}
         label={"Your password"}
         error
-     
-        
         handleChange={setInputPasswordValue}
-
       />
       <Input
-      id={"email"}
-      type={"email"}
-      icon={"icon"}
-      name="email"
-      placeholder={"Inserisci la tua mail"}
-      label={"@email"}
+        id={"email"}
+        type={"email"}
+        icon={"icon"}
+        name="email"
+        placeholder={"Inserisci la tua mail"}
+        label={"@email"}
       />
 
-       <Select  options={options}
+      <Select
+        options={options}
         defaultValue={options?.options[0]?.value}
-        handleChange={setInputSelectValue}/>
+        handleChange={setInputSelectValue}
+      />
 
-        <DropdownSelect options={options} handleChange={setInpuDropdownValue}/>
+      <DropdownSelect options={options} handleChange={setInpuDropdownValue} /> */}
+
+      <InputCheckbox checked />
     </>
   );
 }

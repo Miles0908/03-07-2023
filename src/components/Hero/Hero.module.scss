@@ -1,4 +1,4 @@
-.Hero__Text {
+/* .Hero__Text {
   @include Text;
 }
 .Hero img {
@@ -50,5 +50,45 @@
   .Hero__Text {
     @include Text;
     @include font-size(2.7rem);
+  }
+} */
+
+.Hero {
+  position: relative;
+}
+.container{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper {
+  height: 100vh;
+  width: 100%;
+  //   background-color: red;
+}
+
+.Hero img {
+  @include borderBox(12px);
+  @include padding(4px);
+  width: 100%;
+  height: auto;
+
+}
+
+.navigation {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: purple;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  &.prevButton {
+    left: 0;
+  }
+  &.nextButton {
+    right: 0;
   }
 }
