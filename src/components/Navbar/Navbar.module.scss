@@ -1,0 +1,90 @@
+/* .Navbar {
+  background-color: $colorBackground;
+  @include flexboxCenter;
+  @include justify-content(center);
+  @include borderBox($primaryColor);
+}
+
+.Navbar li {
+  @include flexboxCenter;
+  @include borderBox($primaryColor);
+  @include display-inline;
+  @include padding(8px);
+}
+.Navbar li:hover {
+  @include hover;
+}
+
+
+@include xs{
+  .Navbar {
+    
+   
+    width: 50vh;
+  }
+}
+
+@include sm{
+  .Navbar {
+
+    width: 108vh;
+  }
+}
+
+@include md{
+  .Navbar{
+      width: 140vh;
+  }
+}
+@include lg{
+  .Navbar{
+      width: 200vh;
+  }
+} */
+
+.Navbar{
+  background-color: $primaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+  @include borderBox(12px);
+  
+}
+.search{
+ 
+
+
+}
+
+.menuItem {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  bottom: -6px;
+  &__label {
+    cursor: pointer;
+  }
+
+  &__dropdown {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    &.open {
+      padding: 12px;
+      visibility: visible;
+      opacity: 1;
+      background-color: rgb(242, 242, 242);
+      border-radius: 12px;
+    }
+  }
+}
